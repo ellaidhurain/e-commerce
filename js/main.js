@@ -91,6 +91,16 @@ document.addEventListener("DOMContentLoaded", function () {
         totalEle.textContent = priceElement.textContent;
       }
     });
+
+    itemDiv.addEventListener("click", function () {
+      radioInput.checked = true;
+      removeDropdownContainer();
+      if (radioInput.checked) {
+        itemDiv.appendChild(dropdownContainerDiv);
+        itemDiv.classList.add("selected");
+        totalEle.textContent = priceElement.textContent;
+      }
+    });
   });
 
   function removeDropdownContainer() {
