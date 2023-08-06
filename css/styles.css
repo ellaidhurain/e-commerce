@@ -194,3 +194,9 @@ button {
   color: white;
   font-size: 18px;
 }
+
+.text{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
