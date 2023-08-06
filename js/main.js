@@ -83,15 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalEle = document.querySelector("#total");  
     const priceElement = itemDiv.querySelector(".price-text");
     
-    radioInput.addEventListener("change", function () {
-      removeDropdownContainer();
-      if (radioInput.checked) {
-        itemDiv.appendChild(dropdownContainerDiv);
-        itemDiv.classList.add("selected");
-        totalEle.textContent = priceElement.textContent;
-      }
-    });
-
     itemDiv.addEventListener("click", function () {
       radioInput.checked = true;
       removeDropdownContainer();
