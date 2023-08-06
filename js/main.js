@@ -75,20 +75,12 @@ document.addEventListener("DOMContentLoaded", function () {
     secondDropdownDiv
   );
 
-  function removeDropdownContainer() {
-    parentItemContainer.forEach((itemDiv) => {
-      itemDiv.classList.remove("selected");
-      const dropdown = itemDiv.querySelector(".dropdown-container");
-      if (dropdown) {
-        dropdown.remove();
-      }
-    });
-  }
+  // function to dynamically add dropdown.
 
   parentItemContainer.forEach((itemDiv) => {
     const radioInput = itemDiv.querySelector("input[type='radio']");
 
-    const totalEle = document.querySelector("#total");
+    const totalEle = document.querySelector("#total");  
     const priceElement = itemDiv.querySelector(".price-text");
 
     radioInput.addEventListener("change", function () {
@@ -100,4 +92,14 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  function removeDropdownContainer() {
+    parentItemContainer.forEach((itemDiv) => {
+      itemDiv.classList.remove("selected");
+      const dropdown = itemDiv.querySelector(".dropdown-container");
+      if (dropdown) {
+        dropdown.remove();
+      }
+    });
+  }
 });
