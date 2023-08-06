@@ -120,7 +120,7 @@ input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 16px;
+  width: 15px;
   height: 15px;
   border-radius: 50%;
   border: 1px solid #ccc;
@@ -140,6 +140,12 @@ input[type="radio"]:checked {
 
 input[type="radio"] + label {
   margin-left: 10px;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropdown-container {
