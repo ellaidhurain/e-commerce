@@ -69,7 +69,7 @@ main {
   cursor: pointer;
 }
 
-.item.middle-item-container {
+.item.item-container {
   display: block;
 }
 
@@ -78,7 +78,7 @@ main {
   border-color: #168b4e;
 }
 
-.middle-item-content {
+.item-content {
   display: flex;
 }
 
